@@ -1,0 +1,184 @@
+<head>
+  <script src="pace/pace.js"></script>
+  <link href="pace/themes/pink/pace-theme-loading-bar.css" rel="stylesheet" />
+  <link rel="stylesheet" href="Swiper-master/dist/idangerous.swiper.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script defer src="Swiper-master/dist/idangerous.swiper-2.7.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+    <script src="js/rotateMe.js"></script>
+  <script type="text/javascript">
+window.onload = function() {
+  var mySwiper = new Swiper('.swiper-container',{
+    //Your options here:
+
+
+      mode:'horizontal',
+//      loop: true,
+      speed: 600,
+	  slidesPerView:'auto',
+	  freeMode:true,
+	  freeModeFluid:true,
+	  resistance: false,
+	  resizeReInit:true,
+      calculateHeight: true,
+	  calculateWidth:true,
+   // centeredSlides: true,
+    //etc..
+  });  
+  /////////////////////////////////////////////////////////////////////////////////////// THIS BE THE IMPORTANT BIT
+/*
+  if (Math.abs(window.orientation) === 90) {
+        // Landscape
+
+        var myElement = document.querySelector("#turnDeviceNotification");
+        myElement.style.display = "none";
+
+		
+    } else {
+    	// Portrait
+
+		
+		var myElement = document.querySelector("#turnDeviceNotification");
+        myElement.style.display = "block";
+		alert("Please rotate your device to view in landscape");
+		
+    }
+  
+*/
+  ///////////////////////////////////////////////////////////////////////////////////////  
+  
+}
+/*
+function readDeviceOrientation() {
+                 		
+    if (Math.abs(window.orientation) === 90) {
+        // Landscape
+
+        var myElement = document.querySelector("#turnDeviceNotification");
+        myElement.style.display = "none";
+
+		
+    } else {
+    	// Portrait
+
+		
+		var myElement = document.querySelector("#turnDeviceNotification");
+        myElement.style.display = "block";
+		alert("Please rotate your device to view in landscape");
+		
+    }
+}
+window.onorientationchange = readDeviceOrientation;
+*/
+</script>
+
+
+<style>
+html{
+/*	height:100% */
+;background-color:white;
+}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.2;position:relative;height:100%;}
+.swiper-container{width:100%;height:auto;color:#fff;text-align:center;}
+.pagination{position:absolute;z-index:20;left:10px;bottom:10px;}
+.swiper-pagination-switch{display:inline-block;width:8px;height:8px;border-radius:8px;background:#222;margin-right:5px;opacity:0.8;border:1px solid #fff;cursor:pointer;}
+.swiper-visible-switch{background:#aaa;}
+.swiper-active-switch{background:#fff;}
+
+
+
+</style>
+
+
+
+</head>
+
+
+
+<body>
+<div class="swiper-container">
+
+
+  <div class="swiper-wrapper">
+  
+
+<!--    <img class="preloaded" src="images/rotateMessagePort.jpg" width="auto" height="auto" ></img> -->
+    
+
+
+
+<!--------------------------------------------------------------------------------------------------------
+
+<!-- START SLIDE -->
+        <div class="swiper-slide"> 
+        <img class="portrait" src="images/Slider-Feb22.jpg" alt=""></img>
+       
+          </div>
+<!-- END SLIDE -->
+
+
+
+
+<!--------------------------------------------------------------------------------------------------------
+
+
+
+
+
+<!--
+<script>
+
+//---------------------------THIS ONE WORKS----
+/*
+if(window.innerHeight > window.innerWidth){
+  alert("Please use Landscape!");
+}
+*/
+//---------------------------------------------
+
+/*
+window.onTouchMove = function() {
+if(window.innerHeight > window.innerWidth){
+  alert("Please use Landscape!");
+}
+}
+*/
+
+
+
+
+</script>
+-->
+
+<script>
+window.onorientationchange = function(){
+	var mySwiper = new Swiper('.swiper-container',{
+    //Your options here:
+
+
+      mode:'horizontal',
+//      loop: true,
+      speed: 600,
+	  slidesPerView:'auto',
+	  freeMode:true,
+	  freeModeFluid:true,
+	  resistance: false,
+	  resizeReInit:true,
+      calculateHeight: true,
+	  calculateWidth:true,
+   // centeredSlides: true,
+    //etc..
+});
+}
+</script>
+<!--
+<script>
+window.onorientationchange = function() {
+alert("On some older Android devices, you many need to close then reopen this page to view it completely");
+}
+</script>
+-->
+</div>
+</div>
+</body>

@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+
+<style type="text/css" media="screen">
+
+
+
+
+	.landscape { 
+	width:auto !important;
+    height:100%;
+    display:inherit;}
+	
+	.portrait { 
+	height:inherit;
+    width:auto;
+    display:block;margin-left:auto;margin-right:auto; } 
+	
+	
+
+
+.captionp {
+position: relative;
+color: white;
+width: 220px;
+font-family: Arial;
+font-weight: normal;
+background-color: black;
+height: auto;
+text-align: left;
+padding: 10px;
+float: right;
+top: -550px;}
+
+.captionl {
+position: relative;
+color: white;
+width: 520px;
+left: 60%;
+top: -50px;
+font-family: Arial;
+font-weight: bold;
+background-color: black;
+height: 50px;
+text-align: left;
+padding: 2px;}
+
+.captionpp {
+  top: 0px;
+position: relative;
+width: 180px;
+font-weight: normal;
+font-size: .8em;
+background-color: #000000;
+}
+
+
+
+
+</style>
+
