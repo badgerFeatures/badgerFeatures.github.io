@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<style>
+@keyframes spin{
+	from{transform:rotate(0deg);-webkit-transform:rotate(0deg)}
+	to{transform:rotate(45deg);-webkit-transform:rotate(45deg)}
+	}
+
+@-webkit-keyframes spin{
+	0%{transform:rotate(45deg)}
+	50%{transform:rotate(405deg); width:500px; height:500px; background:yellow;}
+	100%{transform:rotate(45deg)}
+	}	
+@-webkit-keyframes spinInner{
+	0%{transform:rotate(45deg);margin-left:00px;}
+	50%{transform:rotate(-2405deg); width:500px; height:500px; background:#0FF;}
+	100%{transform:rotate(45deg);margin-left:00px;}
+	}	
+@-webkit-keyframes size{
+	0%{transform:rotate(0deg); width:500px; height:500px}
+	50%{transform:rorate(0deg); width:500px; height:500px}
+	100%{transform:rotate(0deg); width:500px; height:500px}
+	}		
+body{background:white}
+#greenSquare{
+background-color:green;
+width:500px;
+height:500px;
+margin:0 auto;
+animation: spin 5s infinite;
+-webkit-animation: spin 5s infinite;
+/*animation-name:spin;
+animation-duration:5s;
+animation-timing-function:linear;
+animation-iteration-count:infinite;*/
+
+}
+#theImage{
+	-ms-animation: size 5s infinite;
+	-webkit-animation: size 5s infinite;
+	animation: size 5s infinite;
+	
+	}
+
+#header{
+	height:25px;
+	}
+
+#purpleSquare{
+	width:200px;
+	height:200px;
+	margin:0 auto;
+	padding-top:5px;
+}
+
+#holder{
+width:100%;	
+}
+#inner{
+	width:50%;
+	margin:0 auto;
+}
+#triangleHolder{
+	width:100%;
+	height:100%;
+	margin:0 auto;
+	}
+#triangle1{
+	width:20px;
+	height:45%;
+	margin:0 auto;
+	}
+#triangle2{
+	background-color:black;
+	width:10%;
+	height:10%;
+	margin:0 auto;
+	-webkit-animation: spinInner 5s infinite;
+	animation: spinInner 5s infinite;
+	}
+#triangle3{
+	width:20%;
+	height:45%;
+	margin:0 auto;
+	}	
+</style>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+
+
+<div id="header">
+<input type="button" onclick="document.getElementById('PID').innerHTML='Hello'"/>
+<p id="PID"></p>
+<input type="button" onclick="document.getElementById('holder').style.width='100px'"/>
+</div>
+<div id="holder">
+<div id="inner">
+<div id="greenSquare"><img id="theImage" src="pieMask2.png" width="500" height="500" alt=""/>
+    <div id="triangleHolder">
+        <div id="triangle1"></div>
+        <div id="triangle2"></div>
+        <div id="triangle3"></div>
+    </div>
+</div>
+</div>
+</div>
+</body>
+</html>
