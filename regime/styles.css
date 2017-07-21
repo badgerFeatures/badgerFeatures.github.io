@@ -1,0 +1,13 @@
+/* CSS Document */
+
+@charset "utf-8";
+
+	#theImageSize{
+		background-image: url(http://www.julescooper.com/regime/regime_Spring2017-380.jpg);
+		background-repeat:no-repeat;
+		background-size:cover;
+/*		background-size:100% auto;*/
+		width:100%;
+		/*height:707px;*/
+	}
+
