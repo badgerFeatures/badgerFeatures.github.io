@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flat Audio</title>
+
+<link href="css/flat.audio.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:600' rel='stylesheet' type='text/css' />
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.js"></script>
+<script type="text/javascript" src="js/flat.audio.js"></script>
+
+<style>
+body {
+	margin:0;
+	padding:0;
+}
+.responsive-wrapper {
+	margin:0 auto;
+
+	min-width:320px;
+	max-width:800px;
+	width:100%;
+
+	-webkit-box-sizing: border-box;
+	-khtml-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.theme-title {
+	font: 32px 'Source Sans Pro', sans-serif;
+	text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="responsive-wrapper">
+	<p class="theme-title">Flat Audio</p>
+
+<div id="jquery_jplayer_audio_1" class="jp-jplayer"></div>
+
+<div id="jp_container_audio_1" class="jp-flat-audio" role="application" aria-label="media player">
+	<div class="jp-play-control jp-control">
+		<button class="jp-play jp-button" role="button" aria-label="play" tabindex="0"></button>
+	</div>
+	<div class="jp-bar">
+		<div class="jp-seek-bar jp-seek-bar-display"></div>
+		<div class="jp-seek-bar">
+			<div class="jp-play-bar"></div>
+			<div class="jp-details"><span class="jp-title" aria-label="title"></span></div>
+			<div class="jp-timing"><span class="jp-duration" role="timer" aria-label="duration"></span></div>
+		</div>
+	</div>
+	<div class="jp-no-solution">
+		Media Player Error<br />
+		Update your browser or Flash plugin
+	</div>
+</div>
+
+</div>
+</body>
+</html>

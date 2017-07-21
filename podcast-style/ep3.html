@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--<link type="text/css" href="skin/pink.flag/css/jplayer.pink.flag.css" rel="stylesheet" />-->
+<link type="text/css" href="skin/flat-audio/css/flat.audio.css" rel="stylesheet" />
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:600' rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="js/flat.audio.js"></script>
+<title>Episode 3 headline</title>
+<style>
+body {
+	margin:0;
+	padding:0;
+}
+.responsive-wrapper {
+	margin:0 auto;
+	margin-bottom:40px;
+
+	min-width:320px;	
+	max-width:100%;
+	width:100%;
+
+	-webkit-box-sizing: border-box;
+	-khtml-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.theme-title {
+	font: 32px 'Source Sans Pro', sans-serif;
+	text-align: center;
+}
+
+#header{
+	width:100%
+}
+#information{
+	width:100%;
+	font-family: Verdana, Geneva, sans-serif;
+	text-align:center;
+	margin-bottom:20px;
+}
+#episodes{
+	width:100%;
+	font-family: Verdana, Geneva, sans-serif;
+	text-align:center;
+	font-weight:bold;
+}
+#episode{
+	width:50%;
+	max-width:400px;
+	min-width:300px;
+	margin:0 auto;
+	padding:10px;
+	background-color: orange;
+	margin-bottom:10px;
+	border-radius: 25px;
+}
+.newButton{
+	position: relative;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: left;
+
+	min-width:320px;
+	max-width:1280px;
+	width: 100%;
+	height: 64px;
+
+	/* Hide iOS touch highlight */
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+
+	/* Disable selection */
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	/* define your text color here */
+	color: #ffffff;
+}
+
+a:link{text-decoration: none;color:black;}
+a:visited{text-decoration: none;color:black;}
+a:download{text-decoration: none;color:black;}
+a:hover{text-decoration: none;color:#00aeef;}
+
+#blackIcon{
+	color:black;
+}
+#blackIcon:hover{
+	color: #00aeef;
+}
+</style>
+
+<script>
+function PLAYME(){
+$("#jpId").jPlayer("stop");
+}
+</script>
+
+</head>
+
+<body>
+<div style="height:64px;background-color:red;">
+<div class="responsive-wrapper">
+	<!--<p class="theme-title">Flat Audio</p>-->
+
+<div id="jquery_jplayer_audio_3" class="jp-jplayer"></div>
+
+<div id="jp_container_audio_3" class="jp-flat-audio" role="application" aria-label="media player" style="margin:0 auto;">
+	<div class="jp-play-control jp-control">
+		<button class="jp-play jp-button" role="button" aria-label="play" tabindex="0"></button>
+	</div>
+	<div class="jp-bar">
+		<div class="jp-seek-bar jp-seek-bar-display"></div>
+		<div class="jp-seek-bar">
+			<div class="jp-play-bar"></div>
+			<div class="jp-details"><span class="jp-title" aria-label="title"></span></div>
+			<div class="jp-timing"><span class="jp-duration" role="timer" aria-label="duration"></span></div>
+		</div>
+	</div>
+	<div class="jp-no-solution">
+		Media Player Error<br />
+		Update your browser or Flash plugin
+	</div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+<!--
+
+<div id="information">
+  
+  <div id="buttons" style="display:inline-block;">
+    
+    <div id="blackIcon" style="float:left;margin-right:10px;">
+    <i class="fa fa-play-circle fa-3x"></i>
+    </div>
+
+    <div id="blackIcon" style="width:50px;float:left;margin-right:0px;margin-top:10px">
+    <i class="fa fa-rss fa-2x"></i>
+    </div>
+    
+    <div id="blackIcon" style="width:50px;float:left;margin-right:0px;margin-top:10px">
+    <a href="http://www.julescooper.com/podcast/DM450107.mp3" download><i class="fa fa-cloud-download fa-2x"></i></a>
+    </div>
+    
+    <div id="blackIcon" style="width:50px;float:left;margin-right:0px;margin-top:10px">
+    <a href="https://www.facebook.com/timesandsundaytimes"target="_blank"><i class="fa fa-facebook-official fa-2x"></i></a>
+    </div>
+    
+  </div><!--buttons-->
+<!--</div><!--information-->
+
+
+<!--
+<div id="episodes">
+  <div id="episode">
+    <h2>EPISODE 1</h2><p>Feet on the beach</p>
+    <div style="100%"><div style="margin:0 auto;width:64px;">
+ <div id="jp_container_audio_1" class="jp-flat-audio" role="application" aria-label="media player" style="margin:0 auto;">
+<div class="jp-play-control jp-control" style="border-radius:50%;">
+<button class="jp-play jp-button" role="button" aria-label="play" tabindex="0" ></button>
+</div>
+</div></div>
+</div>
+</div>
+  
+  <div id="episode"><h2>EPISODE 2</h2><p>The only unsolved airline hijacking in American history</p></div>
+    
+  <div id="episode"><h2>EPISODE 3</h2><p>Double-trouble jewellery heist</p></div>
+  <div id="episode"><h2>EPISODE 4</h2><p>The Manson link in London</p></div>
+  <div id="episode"><h2>EPISODE 5</h2><p>Boston’s vanishing art</p></div>
+</div>
+-->
+
+</body>
+</html>
