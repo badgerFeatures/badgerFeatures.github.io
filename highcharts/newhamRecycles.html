@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!--<script src="/js/highstock.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="testjs.js"></script>-->
+
+
+<title>Newham's recycling record</title>
+
+</head>
+
+<body>
+<div id="container" style="width:100%; height:100%;"></div>
+<script type='text/javascript'>
+$(document).ready(function() {
+
+        var chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'container'
+            },
+
+            title: {
+            text: 'London Household recycling rates',
+            x: -20 //center
+        },
+        subtitle: {
+            text: 'Source: Greater London Authority',
+            x: -20
+        },
+		 legend: {
+            layout: 'vertical',
+            align: 'center',
+            verticalAlign: 'bottom',
+            borderWidth: 0
+        },
+			
+			xAxis: {
+                categories: ['1998/99', '1999/00', '2000/01', '2001/02', '2002/03', '2003/04',
+                '2004/05', '2005/06', '2006/07', '2007/08', '2008/09', '2009/10', '2010/11', '2011/12', '2012/13', '2013/14', '2014/15', '2015/16']
+            },
+			
+			yAxis: {
+            title: {
+                text: 'Recycling rate'
+            }
+        },
+
+            series: [{
+				name: 'Bexley',
+                data: [20,18,17,20,23,21,30,38,40,42,51,51,51,53,54,55,54],
+                color: '#26ff00',
+            }, {
+				name: 'England',
+                data: [9,10,11,13,15,18,23,27,31,35,38,40,41,43,43,43,44], 
+				color: '#ede806',
+			}, {
+				name: 'London average',
+                data: [7.852941176,	8.242424242,	8.794117647,	9.294117647,	10.79411765,	13.39705882,	16.83823529,	20.41176471,	23.55882353,	26.16176471,	28.64705882,	31.41176471,	32.17647059,	33.60294118,	33.36764706,	33.22058824,	32.67647059], 
+				color: '#ffb400',
+			}, {
+				name: 'Newham',
+                data: [2,3,3,3,5,2,6,10,14,14,15,19,15,23,21,18,17],
+				color: '#ff0100',
+            }],
+
+        });
+		
+		
+
+        $('#container').highcharts(options);
+    });
+</script>
+<div style="width:100%">
+<div style="width:50%;margin: 0 auto">
+<p><i><font color="#606060">Updated on May 31, 2016</font></i></p>
+<p>When it comes to recycling habits, my local council appears to be slipping from bin sinner to dog's dinner.</p>
+<p>Together with Lewisham, Newham has the worst household recycling rate in London and its performance has been in decline since 2011.</p>
+<p>Newham households recycled just 17% of their waste last year according to the London Assembly's most recent data &#x2014; down from 23% in 2011/12.</p>
+<p>I'm not surprised by this. Glossy council newsletters tell me that <i>some</i> of plastic bottles I throw away can be recycled &#x2014; if I clean them well enough &#x2014; while glass is to be chucked into black bin liners along with the non-recycleables.</p>
+<p>So why does my manor have such difficultly in competing with London councils such as Bexley, the capital's top-performing borough, where households recycle more than half of their rubbish?</p>
+<p><b>The council says the problem starts with the residents themselves</b>. A spokesperson told me that "as a densely populated borough with high levels of diversity, transience and relative deprivation" there are many "barriers to recycling". They added: "Many of the borough's properties are small and there are an increasing number of flats, which often have limited space for waste storage both inside and outside."</p>
+<p>This was apparently identified &#x2014; eight years ago &#x2014; by the <a href="http://www.wrap.org.uk/about-us/about">Waste and Resources Action Programme (WRAP)</a>, the government- and EU-funded charity that set up the Love Food, Hate Waste campaign.</p>
+<p>But eight years is a long time in London development, and don't other boroughs have exactly the same problem? <b>Households in Greenwich recycled twice as much of their rubbish last year</b>. And I'd like to create or find a graphic that shows how dissimilar Newham's housing stock is from other boroughs'.</p>
+<p>The council's plan for its diverse, transient and relatively deprived population is called the Keep Newham Clean strategy, launched this year "to support and <b>educate residents</b> about how to dispose of their rubbish responsibly." Newham Town Hall hopes the campaign will also help to reduce the amount of contamination found in recycling collections.</p>
+<p>And I'm told that <b>glass is recycled... sort of</b>. It's separated from the non-recyclables and used for making concrete and roads. Not quite the same as having the glass melted and cast as new bottles and jars, though you can achieve this if you want. There are around 100 glass-recycling banks across the borough. Good for those with cars or strong arms, at least.</p>
+<p>Again, the council says that the lack of household glass recycling is <b>not its fault</b>. It's down to the <a href="http://www.recycleforyourcommunity.com/">East London Waste Authority (ELWA)</a>, which handles recycling for Barking and Dagenham, Newham, Redbridge and Havering.</p>
+<p>The council spokesperson said: "Glass is not accepted at the materials recovery facility provided by ELWA's contractor, so Newham is unable to collect glass in the mixed recycling service.</p>
+<p>"In 2014/15 less than 30% of waste from ELWA was sent to landfill, compared to almost 70% in 2006/07, we expect this figure to reduce further in 2015/16."</p>
+<p><i>Source: <a href="http://data.london.gov.uk/dataset/household-waste-recycling-rates-borough/resource/6f7bc5cd-217b-4eed-9450-af086f17908e#">London Assembly</a></i></p>
+</div>
+</div>
+</body>
+
+</html>
