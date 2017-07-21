@@ -1,0 +1,591 @@
+/* Generic styles
+/  -------------------------------------------------------------------------- */
+section, footer, nav {
+  display: block;
+}
+
+figure {
+  margin: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+/* Header
+/  -------------------------------------------------------------------------- */
+#header {
+  position: absolute;
+  height: 90px;
+  width: 100%;
+  bottom: 40px;
+  z-index: 200;
+  -webkit-transform: translateZ(10000px);
+  background-image: url('../images/rimmel_logo.png');
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+  
+}
+#kate{
+	position:absolute;
+	width:100%;
+	height:100%;
+
+	/*width:708px;
+	height:768px;
+	right:50px;*/
+	/*background-image: url('../images/new/cover-L5.jpg');*/
+	background-repeat:no-repeat;
+	-webkit-perspective: 1000px;
+	z-index: 200;
+}
+
+#kate2{
+	position:absolute;
+	width:122%;
+	top:-10%;
+
+
+	/*width:708px;
+	height:768px;
+	right:50px;*/
+	/*background-image: url('../images/new/cover-L5.jpg');*/
+	background-repeat:no-repeat;
+	-webkit-perspective: 1000px;
+	z-index: 150;
+}
+
+
+#theMast{
+	position:absolute;
+	width:62%;
+	height:auto;
+	/*background-image: url('../images/new/styleMast.png');*/
+	background-repeat:no-repeat;
+	/*-webkit-perspective: 1000px;*/
+	z-index: 200;
+	
+}
+
+#theSTMast{
+	position:absolute;
+	width:11%;
+	height:auto;
+	left:12%;
+	padding-left:4px;
+	top:13%;
+	/*background-image: url('../images/new/styleMast.png');*/
+	background-repeat:no-repeat;
+	 -webkit-perspective: 1000px;
+	  z-index: 200;
+	
+}
+
+
+#text{
+	position:absolute;
+	width:380px;
+	height:300px;
+	left:50px;
+	top:310px;
+	/*background-image: url('../images/new/landscapeWords.png');*/
+	background-repeat:no-repeat;
+	 -webkit-perspective: 1000px;
+	  z-index: 200;
+	
+	}
+	
+#text2{
+	position:absolute;
+	width:400px;
+	height:200px;
+	left:50px;
+	top:310px;
+	/*background-image: url('../images/new/landscapeWords.png');*/
+	background-repeat:no-repeat;
+	 -webkit-perspective: 1000px;
+	  z-index: 200;
+	
+	}
+#text3{
+	position:absolute;
+	width:400px;
+	height:auto;
+	left:5%;
+	top:47%;
+	/*background-image: url('../images/new/landscapeWords.png');*/
+	background-repeat:no-repeat;
+	 -webkit-perspective: 1000px;
+	  z-index: 200;
+	
+	}
+	
+#products{
+	position: absolute;
+	width: 230px;
+	height: 390px;
+	right: 43%;
+	top: 2%;
+	background-image: url('../images/new/robotGIF-new1.gif');
+	background-repeat:no-repeat;
+	-webkit-perspective: 1000px;
+	z-index: 200;
+	
+}
+
+#products2{
+	position: absolute;
+	width: 30%;
+	height: auto;
+	left: 1%;
+	padding-left:5px;
+	top: 34%;
+	/*background-image: url('../images/new/robotGIF-new1.gif');*/
+	background-repeat:no-repeat;
+	-webkit-perspective: 1000px;
+	z-index: 200;
+	
+}
+	
+	#sig{
+	position: absolute;
+	width: 280px;
+	height: 220px;
+	left: 0px;
+	top: 0px;
+	-webkit-perspective: 1000px;
+	z-index: 200;
+
+	
+	
+	}
+	
+	.path {
+ stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  
+  -webkit-animation: dash 2s 3s linear forwards;
+}
+
+.path2 {
+ stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  
+  -webkit-animation: dash 1.5s 3.5s linear forwards;
+ 
+}.path5 {
+ stroke-dasharray: 1000;
+  stroke-dashoffset: -500;
+  
+  -webkit-animation: dash2 2.1s 3.7s linear forwards;
+}
+.path3 {
+ stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+ 
+  -webkit-animation: dash 2.5s 7s linear forwards; 
+  
+}
+.path4 {
+ stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+ 
+  -webkit-animation: dash 1.2s 6s linear forwards; 
+ 
+}
+
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+
+}
+@-webkit-keyframes dash2 {
+  0% {
+    stroke-dashoffset: -500;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+
+}
+#interaction-hint {
+	position:absolute;
+  width: 250px;
+  height: 30px;
+  top: -20px;
+  left: 80px;
+  text-align: right;
+  z-index:2000;
+  opacity:0;
+}
+#interaction-hint h3{
+	color:rgba(255,255,255,1.00);
+	font-size:19px;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align:right;
+	
+}
+
+/* Box faces
+/  -------------------------------------------------------------------------- */
+#box-container {
+  width: 100%;
+  z-index: 100;
+}
+
+#box figure {
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+#box .bottom {
+  background-image: url('../images/jet_bg.jpg');
+  background-color: #ffffff;
+}
+#box .top {
+  background-image: url('../images/sapphire_bg.jpg');
+  background-color: #000000;
+}
+#box .right {
+  background-image: url('../images/emerald_bg.jpg');
+  background-color: #000000;
+}
+#box .left {
+  background-image: url('../images/ameth_bg.jpg');
+  background-color: #000000;
+}
+#box .front {
+  background-image: url('../images/sample-bottom.jpg');
+  background-color: #000000;
+}
+#box .back {
+  background-image: url('');
+  background-color: #d0fff8;
+}
+
+
+/* Box navigation
+/  -------------------------------------------------------------------------- */
+#box-navigation {
+  position: absolute;
+  width: 650px;
+  z-index: 450;
+  bottom: 22px;
+  -webkit-transform: translateZ(10000px);
+  right:0px;
+  background-image: url('../images/menu_bg.png');
+  background-repeat:repeat-x;
+  padding-right:30px;
+}
+#box-navigation button {
+	background-color:transparent;
+  
+  height: 108px;
+  width: 108px;
+  float: right;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  opacity: 0.9;
+  cursor: pointer;
+  -webkit-filter: saturate(60%);
+  -webkit-transition: opacity 1s;
+     -moz-transition: opacity 1s;
+          transition: opacity 1s;
+}
+#sapphire{
+	background-image: url('../images/sapphire_btn.png');
+	background-repeat:no-repeat;
+
+	
+}
+#amethyst{
+	background-image: url('../images/amethyst_btn.png');
+	background-repeat:no-repeat;
+
+}
+#emerald{
+	background-image: url('../images/emerald_btn.png');
+	background-repeat:no-repeat;
+
+	
+}
+#buynow1  { 
+top: 276px;
+}
+#buynow3  { 
+top: 316px;
+}
+
+#jet{
+	background-image: url('../images/jet_btn.png');
+	background-repeat:no-repeat;
+	
+	}
+#main{
+	background-image: url('../images/main_btn.png');
+	background-repeat:no-repeat;
+	}
+.button-video{
+	padding-top:5px;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-image: url('../images/watch_btn.png');
+	background-repeat:no-repeat;
+	background-position:right;
+	padding-right:40px;
+	padding-left:10px;
+	background-color:transparent;
+	position: absolute;
+	width: 230px;
+	height: 40px;
+	left: 80px;
+	top: 110px;
+	background-color:#FF371D;
+	-webkit-border-radius: 5px;
+	-webkit-perspective: 1000px;
+	z-index: 200;
+	border:none;
+	color:rgba(255,255,255,1.00);
+	font-size:13px;
+	text-align:left;
+	}
+.buynow{
+	position: absolute;
+	width: 166px;
+	height: 43px;
+	right: 247px;
+	top: 226px;
+	background-image: url('../images/buynow.png');
+	background-repeat:no-repeat;
+	-webkit-perspective: 1000px;
+	z-index: 200;
+	border:none;
+
+}
+	
+	
+#box-navigation button.selected {
+	-webkit-filter: saturate(120%);
+  opacity: 1;
+}
+#box-navigation button span {
+  position: absolute;
+  bottom: 0;
+  background:  rgba(0, 0, 0, 0.6);
+  display: block;
+  width: 256px;
+  left: 0;
+  padding: 5px 0;
+}
+
+#cube.ready-for-zoom-in {
+  -webkit-transform: translateZ( -812px );
+     -moz-transform: translateZ( -812px );
+          transform: translateZ( -812px );
+}
+/* POPUPS */
+#popup {
+  background: rgba(0,0,0,0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: none;
+  opacity: 0;
+  z-index: 460;
+  overflow: hidden;
+}
+
+#popup .inner {
+  position: absolute;
+  background: #fff;
+  width: 640px;
+  height: 480px;
+  padding: 10px;
+  top: 50%;
+  left: 50%;
+  margin-top: -257px;
+  margin-left: -312px;
+}
+
+#popup .close {
+  background: #fff;
+  font-weight: bold;
+  font-size: 2em;
+  width: 23px;
+  height: 23px;
+  display: block;
+  position: absolute;
+  z-index: 100;
+  right: 0;
+  top: 0;
+  line-height: 24px;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+  -webkit-perspective: 1000px;
+  -webkit-transform:translateZ(1px);
+  
+}
+
+#popup .close:hover {
+  background: #000;
+  color: #fff;
+}
+
+#popup video {
+  width: 640px;
+  height: 480px;
+}
+
+
+
+
+@media all and (orientation:landscape) {  }
+
+@media all and (orientation:portrait) {
+
+ #box-navigation{
+	  padding-right:110px;
+	  width:660px;
+	  bottom:135px;
+	  
+	  }
+	  #header{
+		  background-image: url('../images/rimmel_portrait.png');
+		  left:400px;
+		  
+		  }
+		  #sig{
+			  top:310px;
+			  
+			  
+			  }
+	#products{
+		top:340px;
+		right:20px;
+		}
+
+#products2{
+	width:40%;
+	
+
+	
+}
+		
+  #kate
+  { right:0px;
+  	top:0px;
+	  /*background-image: url('../images/new/COVER-P5.jpg');*/
+	  height:1024px;
+    /*background-position: 0 -80px;*/
+	  }
+	  
+	#kate2{  
+	width:120%;
+	top:0%;
+	margin-left:-15%;
+}
+
+	  
+	#text{
+		top: 460px;
+		
+		}  
+
+#text2{
+	left:48%;
+	top:60%;
+	}
+	
+#text3{
+	left:49%;
+	top:76%;
+	
+	}
+
+#theMast{
+	position:absolute;
+	width:100%;
+	height:auto;
+	left:0px;
+	top:0%;
+	/*background-image: url('../images/new/styleMast.png');*/
+	background-repeat:no-repeat;
+	 -webkit-perspective: 1000px;
+	  z-index: 200;
+	
+}
+
+#theSTMast{
+	position:absolute;
+	width:13%;
+	height:auto;
+	left:1%;
+	padding-left:0px;
+	top:15%;
+	/*background-image: url('../images/new/styleMast.png');*/
+	background-repeat:no-repeat;
+	 -webkit-perspective: 1000px;
+	  z-index: 200;
+	
+}
+
+  #box .bottom {
+    background-image: url('../images/sample-bottom-portrait.png');
+  }
+  #box .top {
+    background-image: url('../images/sample-top-portrait.png');
+  }
+  #box .right {
+    background-image: url('../images/sample-right-portrait.png');
+  }
+  #box .left {
+    background-image: url('../images/sample-left-portrait.png');
+  }
+  #box .front {
+    background-image: url('../images/portrait_background.jpg');
+  }
+  #box .back {
+    background-image: url('../images/sample-back-portrait.png');
+  }
+  #hippie, #summer {
+	  top: 130px;
+	  left: 210px;
+	  
+	  }
+	  #boho {
+		  top: 140px;
+		  }
+	#buynow  
+	{ 
+		right: 137px;
+		}
+	#buynow1  
+	{ 
+	right: 237px;
+	top: 280px;
+		}
+	#buynow2  
+	{ 
+	right: 125px;
+	
+		}
+	#buynow3  
+	{ 
+	right: 262px;
+	top: 300px;
+	
+		}
+	
+}
