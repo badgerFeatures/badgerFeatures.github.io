@@ -1,0 +1,184 @@
+<!----------------------------------------THIS IS THE BulbOn INDEX FILE-------------->
+
+
+
+<!----------------vvvvvvvvvvvvvvvvvvvvvvvv-THIS WORKS. IT SHOWS HOW TO CHANGE A PICTURE WHEN THE iPAD ROTATES------------->
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<script type="text/javascript">
+window.onload = function() {
+var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
+var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);  
+document.getElementById("screenStatsHeight").innerHTML= window.innerHeight;
+document.getElementById("screenStatsWidth").innerHTML= window.innerWidth;
+console.log(window.innerWidth);
+
+	if (Math.abs(window.innerWidth) < 1025) {
+	// Landscape
+	document.getElementById("screenStatsDevice").innerHTML= "tablet";
+}
+	else {
+	document.getElementById("screenStatsDevice").innerHTML= "Fuck knows";
+	}
+
+
+
+if (Math.abs(window.orientation) === 90) {
+	 // Landscape
+	 document.getElementById("orientationOfDevice").innerHTML= "Landscape";
+ } 
+ 
+     else {
+     // Portrait	 
+	document.getElementById("orientationOfDevice").innerHTML= "Portrait";
+ }
+}
+/*
+window.onorientationchange = function readDeviceOrientation(x) {	
+	 if (Math.abs(window.orientation) === 90) {
+	 // Landscape
+	 document.getElementById("myImage").src="images/pic_bulb_off.gif";
+	 document.getElementById("screenStatsHeight").innerHTML= window.innerHeight;
+     document.getElementById("screenStatsWidth").innerHTML= window.innerWidth;
+	 document.getElementById("orientationOfDevice").innerHTML= "Landscape";
+ } 
+ 
+     else {
+     // Portrait	 
+	document.getElementById("myImage").src="images/pic_bulb_on.gif";
+	document.getElementById("screenStatsHeight").innerHTML= window.innerHeight;
+    document.getElementById("screenStatsWidth").innerHTML= window.innerWidth;
+	document.getElementById("orientationOfDevice").innerHTML= "Portrait";
+ }
+}
+*/
+</script>
+
+
+
+</head>
+
+<style type="text/css" media="screen">
+
+#wrapper{	
+
+border: 1px solid red;
+overflow: hidden;	
+}
+
+
+
+
+.imagePOS {
+display:block;
+margin-left:auto;
+margin-right:auto;
+
+
+}
+
+.textPOS{
+	width: auto;
+	margin: 0 auto;
+}
+
+p {text-align:center;}
+
+</style>
+<body>
+
+
+<div class="textPOS">
+
+<p style="font-family:Verdana, Geneva, sans-serif; color:#900">This window's height is:</p>
+<p style="font-family:Verdana, Geneva, sans-serif; color:#900" id="screenStatsHeight"></p>
+<p style="font-family:Verdana, Geneva, sans-serif; color:#009"><br>This window's width is:</p>
+<p style="font-family:Verdana, Geneva, sans-serif; color:#009" id="screenStatsWidth"></p>
+<p style="font-family:Verdana, Geneva, sans-serif; color:#360"><br>This device type is:</p>
+<p style="font-family:Verdana, Geneva, sans-serif; color:#360" id="screenStatsDevice"></p>
+<p style="font-family:Verdana, Geneva, sans-serif; color:#C60"><br>The orientation is:</p>
+<p style="font-family:Verdana, Geneva, sans-serif; color:#C60" id="orientationOfDevice"></p>
+
+</div>
+
+
+<img class="imagePOS" id="myImage" src="images/pic_bulb_off.gif" alt ="Lightbulb" width="100"></img>
+
+
+
+
+
+<script>
+window.onorientationchange = function readDeviceOrientation(x) {	
+	 if (Math.abs(window.orientation) === 90) {
+	 // Landscape
+	 document.getElementById("myImage").src="images/pic_bulb_off.gif";
+	 document.getElementById("screenStatsHeight").innerHTML= window.innerHeight;
+     document.getElementById("screenStatsWidth").innerHTML= window.innerWidth;
+	 document.getElementById("orientationOfDevice").innerHTML= "Landscape";
+ } 
+ 
+     else {
+     // Portrait	 
+	document.getElementById("myImage").src="images/pic_bulb_on.gif";
+	document.getElementById("screenStatsHeight").innerHTML= window.innerHeight;
+    document.getElementById("screenStatsWidth").innerHTML= window.innerWidth;
+	document.getElementById("orientationOfDevice").innerHTML= "Portrait";
+ }
+}
+/*
+window.onorientationchange = readDeviceOrientation;
+*/
+</script>
+<!--
+<script>
+function readDeviceOrientation(x) {	
+	 if (Math.abs(window.innerWidth) < 1025) {
+	 // Landscape
+	 document.getElementById("screenStatsDevice").innerHTML= "Tablet";
+ } 
+ 
+}
+window.onorientationchange = readDeviceOrientation;
+</script>
+-->
+
+
+</body>
+</html>
+<!----------------^^^^^^^^^^^^^^^^^^^^^^^^-THIS WORKS. IT SHOWS HOW TO CHANGE A PICTURE WHEN THE iPAD ROTATES-------------
+
+
+
+
+
+
+
+<!----------------vvvvvvvvvvvvvvvvvvvvvvvv-THIS WORKS. IT SHOWS HOW TO ADD A TAPPABLE IMAGE AND BUTTON THAT WORKS ON iPAD-------------
+
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function changeImage() {
+    var image = document.getElementById('myImage');
+    if (image.src.match("bulbon")) {
+        image.src = "images/pic_bulb_off.gif";
+    } else {
+        image.src = "images/pic_bulb_on.gif";
+    }
+}
+</script>
+
+<img id="myImage" onclick="changeImage()" src="images/pic_bulb_off.gif" width="100" height="180">
+
+<p>Click the light bulb to turn on/off the light</p>
+
+<button type="button" onclick="changeImage()">Try it</button>
+</body>
+</html>
+
+<!----^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-THIS WORKS. IT SHOWS HOW TO ADD A TAPPABLE IMAGE AND BUTTON THAT WORKS ON iPAD-------------
